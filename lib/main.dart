@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
                 _currentIndex = val;
               });
             },
-            borderRadius: 20,
+            borderRadius: 25,
             currentIndex: _currentIndex,
             selectedBackgroundColor: Colors.transparent,
             selectedItemColor: Colors.white,
@@ -45,9 +45,7 @@ class _MyAppState extends State<MyApp> {
             padding: const EdgeInsets.symmetric(vertical: 20),
             items: [
               FloatingNavbarItem(
-                icon: _currentIndex == 0
-                    ? Icons.home_filled
-                    : Icons.home_outlined,
+                icon: _currentIndex == 0 ? Icons.home : Icons.home_outlined,
               ),
               FloatingNavbarItem(
                 icon: _currentIndex == 1
